@@ -10,7 +10,7 @@ var del = require("del");
 
 gulp.task("css", function() {
   return gulp
-    .src("source/**/*.scss")
+    .src("source/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
