@@ -30,7 +30,7 @@
     "*.js",
     "source/*.html",
     "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/sass/**/*.{sass,scss}"
+    "source/**/*.svg",
+    "source/**/*.scss"
   ]
 }
