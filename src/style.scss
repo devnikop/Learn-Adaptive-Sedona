@@ -13,10 +13,16 @@
 // header
 @import "components/navigation/navigation.scss";
 @import "components/header/header.scss";
-@import "components/page/page.scss";
 
 // main
 @import "components/advantages/advantages.scss";
 @import "components/hotel/hotel.scss";
 @import "components/map/map.scss";
 @import "components/main/main.scss";
+
+// footer
+@import "components/socials/socials.scss";
+@import "components/footer/footer.scss";
+
+// page layout
+@import "components/page/page.scss";
