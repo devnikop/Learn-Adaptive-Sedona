@@ -1,12 +1,22 @@
+// vendors
 @import "components/base/normalize.scss";
+
+// base
 @import "components/base/variables.scss";
 @import "components/base/mixins.scss";
 @import "components/base/fonts.scss";
 @import "components/base/base.scss";
 
+// UIKit
+@import "components/uikit/button/button.scss";
+
+// header
 @import "components/navigation/navigation.scss";
 @import "components/header/header.scss";
 @import "components/page/page.scss";
 
+// main
 @import "components/advantages/advantages.scss";
+@import "components/hotel/hotel.scss";
+@import "components/map/map.scss";
 @import "components/main/main.scss";
