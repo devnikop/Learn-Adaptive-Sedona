@@ -1,0 +1,67 @@
+.form {
+}
+
+.form__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-almost-black;
+  text-transform: uppercase;
+}
+
+.form__group {
+}
+
+.form__legend {
+  font-weight: $bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.form__label {
+  font-size: 14px;
+  line-height: 26px;
+  color: $text-almost-black;
+  text-transform: uppercase;
+}
+
+.form__input {
+  padding: 0;
+  box-sizing: border-box;
+
+  font-weight: $bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $text-black;
+}
+
+.form__input::placeholder {
+  font: inherit;
+  color: inherit;
+}
+
+.form__list {
+  @include list-reset;
+}
+
+.form__item {
+}
+
+.form__textarea {
+  font-weight: $bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $text-black;
+
+  resize: none;
+}
+
+.form__textarea::placeholder {
+  font: inherit;
+  color: inherit;
+}
+
+.form__submit {
+}

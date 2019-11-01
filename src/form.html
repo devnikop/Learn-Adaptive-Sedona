@@ -3,31 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <title>Sedona</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="page">
     <header class="header page__header">
       <nav class="navigation header__nav">
         <ul class="navigation__list">
-          <li>
-            <a>Главная</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="./index.html">Главная</a>
           </li>
-          <li>
-            <a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="./photo.html">
               Фото и видео
             </a>
           </li>
-          <li>
-            <a>Форма отзыва</a>
+          <li class="navigation__item">
+            <a class="navigation__link">Форма отзыва</a>
           </li>
-          <li>
-            <a>Html Academy</a>
+          <li class="navigation__item">
+            <a class="navigation__link">Html Academy</a>
           </li>
         </ul>
         <button class="navigation__open" aria-label="Открыть меню"></button>
         <button class="navigation__close" aria-label="Закрыть меню"></button>
       </nav>
       <a class="logo header__logo">
-        <img src="" alt="Логотип" />
+        <img
+          width="101"
+          height="83"
+          src="./images/logotype-mobile.svg"
+          alt="Логотип"
+        />
       </a>
     </header>
     <main class="main page__main">
@@ -40,35 +46,33 @@
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
           посещенных вами достопримечательностях
         </p>
-        <form
-          class="form__wrapper"
-          method="POST"
-          action="https://echo.htmlacademy.ru"
-        >
+        <form method="POST" action="https://echo.htmlacademy.ru">
           <fieldset class="form__group">
             <legend class="form__legend">Представьтесь</legend>
             <label class="form__label">
               Имя*:
               <input
-                class="form__input input"
+                class="form__input"
                 type="text"
                 name="first-name"
                 placeholder="Петр"
+                required
               />
             </label>
             <label class="form__label">
               Фамилия*:
               <input
-                class="form__input input"
+                class="form__input"
                 type="text"
                 name="second-name"
                 placeholder="Иванов"
+                required
               />
             </label>
             <label class="form__label">
               Отчество:
               <input
-                class="form__input input"
+                class="form__input"
                 type="text"
                 name="surname"
                 placeholder="Александрович"
@@ -194,17 +198,18 @@
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__legend">Опишите свои эмоции:</legend>
-            <label class="visually-hidden">
-              Опишите свои эмоции:
+            <label>
               <textarea
                 class="form__textarea"
                 name="text"
                 placeholder="Опишите подробно все свои восторги"
-              >
-              </textarea>
+                rows="5"
+              ></textarea>
             </label>
           </fieldset>
-          <button type="submit">Отправить отзыв</button>
+          <button class="button form__submit" type="submit">
+            Отправить отзыв
+          </button>
         </form>
       </section>
     </main>

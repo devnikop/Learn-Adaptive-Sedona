@@ -1,4 +1,6 @@
 .button {
+  @include button-reset;
+
   display: inline-block;
   padding: 15px 20px;
   box-sizing: border-box;
