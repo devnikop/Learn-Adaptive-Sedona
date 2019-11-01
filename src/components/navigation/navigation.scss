@@ -2,7 +2,7 @@
 }
 
 .navigation__list {
-  @include reset-list;
+  @include list-reset;
 }
 
 .navigation__link {
@@ -13,4 +13,12 @@
   text-transform: uppercase;
 
   background-color: $background-blue;
+}
+
+.navigation__open {
+  @include button-reset;
+}
+
+.navigation__close {
+  @include button-reset;
 }

@@ -18,7 +18,7 @@
 }
 
 .advantages__list {
-  @include reset-list;
+  @include list-reset;
 }
 
 .advantages__item {
@@ -58,7 +58,7 @@
 }
 
 .advantages__sublist {
-  @include reset-list;
+  @include list-reset;
 
   color: $text-almost-black;
 
