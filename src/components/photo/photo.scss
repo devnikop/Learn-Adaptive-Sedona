@@ -1,0 +1,33 @@
+.photo {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo__text {
+  margin: 0;
+
+  color: $text-almost-black;
+  text-transform: uppercase;
+}
+
+.photo__list {
+  @include list-reset;
+}
+
+.photo__title {
+  margin: 0;
+
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+.photo__author {
+  color: $text-almost-black;
+}
+
+.photo__likes {
+  font-weight: $bold;
+}
+
+.photo__image {
+}

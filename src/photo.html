@@ -3,31 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <title>Sedona</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="page">
     <header class="header page__header">
       <nav class="navigation header__nav">
         <ul class="navigation__list">
-          <li>
-            <a>Главная</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="./index.html">Главная</a>
           </li>
-          <li>
-            <a>
+          <li class="navigation__item">
+            <a class="navigation__link">
               Фото и видео
             </a>
           </li>
-          <li>
-            <a>Форма отзыва</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="./form.html">Форма отзыва</a>
           </li>
-          <li>
-            <a>Html Academy</a>
+          <li class="navigation__item">
+            <a class="navigation__link">Html Academy</a>
           </li>
         </ul>
         <button class="navigation__open" aria-label="Открыть меню"></button>
         <button class="navigation__close" aria-label="Закрыть меню"></button>
       </nav>
       <a class="logo header__logo">
-        <img src="" alt="Логотип" />
+        <img
+          width="101"
+          height="83"
+          src="./images/logotype-mobile.svg"
+          alt="Логотип"
+        />
       </a>
     </header>
     <main class="main page__main">
@@ -45,25 +51,25 @@
             <h3 class="photo__title">Неродные просторы</h3>
             <span class="photo__author">Автор фото: Борис</span>
             <span class="photo__likes">1350</span>
-            <img class="photo__image" />
+            <img class="photo__image" src="./images/photo-1-mobile.jpg" />
           </li>
           <li>
             <h3 class="photo__title">Местная растительность</h3>
             <span class="photo__author">Автор фото: Сергей</span>
             <span class="photo__likes">143</span>
-            <img class="photo__image" />
+            <img class="photo__image" src="./images/photo-2-mobile.jpg" />
           </li>
           <li>
             <h3 class="photo__title">Дорога на север</h3>
             <span class="photo__author">Автор фото: Петр</span>
             <span class="photo__likes">96</span>
-            <img class="photo__image" />
+            <img class="photo__image" src="./images/photo-3-mobile.jpg" />
           </li>
           <li>
             <h3 class="photo__title">Мост дьявола</h3>
             <span class="photo__author">Автор фото: Антон</span>
             <span class="photo__likes">254</span>
-            <img class="photo__image" />
+            <img class="photo__image" src="./images/photo-4-mobile.jpg" />
           </li>
         </ul>
       </section>
@@ -74,7 +80,10 @@
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
           в очередной раз!
         </p>
-        <video class="presentation__video"></video>
+        <video
+          class="presentation__video"
+          poster="./images/video-mobile.jpg"
+        ></video>
       </section>
     </main>
     <footer class="footer page__footer">
