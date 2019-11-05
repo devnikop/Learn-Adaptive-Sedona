@@ -44,7 +44,8 @@ gulp.task("html", function() {
 
 gulp.task("server", function() {
   server.init({
-    server: "build/"
+    server: "build/",
+    notify: false
   });
 
   gulp.watch("src/**/*.scss", gulp.series("css", "refresh"));

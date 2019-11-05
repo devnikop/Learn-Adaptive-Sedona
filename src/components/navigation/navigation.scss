@@ -1,24 +1,99 @@
 .navigation {
+  position: relative;
+
+  padding-bottom: 55px;
+
+  background-color: #ffffff;
 }
 
 .navigation__list {
   @include list-reset;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 7px;
+
+    background-image: url("../images/nav-shadow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    content: "";
+  }
+}
+
+.no-script .navigation__list {
+  display: block;
+}
+
+.navigation--closed .navigation__list {
+  display: none;
 }
 
 .navigation__link {
+  display: block;
+  padding: 7px 50px;
+
   font-weight: $bold;
   font-size: 18px;
   line-height: 40px;
   color: $text-white;
+  text-align: center;
   text-transform: uppercase;
 
   background-color: $background-blue;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2),
+    inset 0px -1px 0px 0px rgba(1, 1, 1, 0.2);
+
+  &--first {
+    box-shadow: inset 0px -1px 0px 0px rgba(1, 1, 1, 0.2);
+  }
+}
+
+.navigation__open,
+.navigation__close {
+  @include button-reset;
+
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
 }
 
 .navigation__open {
-  @include button-reset;
+  right: 20px;
+  bottom: 18px;
+
+  width: 23px;
+  height: 21px;
+
+  background-image: url("../images/menu-open.svg");
+}
+
+.no-script .navigation__open,
+.navigation:not(.navigation--closed) .navigation__open {
+  display: none;
 }
 
 .navigation__close {
-  @include button-reset;
+  top: 17px;
+  right: 20px;
+
+  width: 23px;
+  height: 22px;
+
+  background-image: url("../images/menu-close.svg");
+}
+
+.no-script .navigation__close,
+.navigation--closed .navigation__close {
+  display: none;
 }

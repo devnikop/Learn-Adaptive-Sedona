@@ -1,2 +1,21 @@
 .header {
+  position: relative;
+
+  margin-bottom: 40px;
+  padding-bottom: 389px;
+
+  background-color: #d6e5ef;
+  background-image: url("../images/back-text-mobile.svg"),
+    url("../images/back-mask-mobile.svg"), url("../images/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom 85px, center bottom, center bottom;
+  background-size: auto cover auto;
+}
+
+.header__logo {
+  position: absolute;
+  bottom: 361px;
+  left: 50%;
+
+  transform: translate(-50%, 0);
 }

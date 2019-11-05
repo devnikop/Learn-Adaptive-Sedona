@@ -2,15 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sedona</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+  <!-- remove class "no-script" to body   -->
   <body class="page">
     <header class="header page__header">
+      <!-- add class "navigation--closed" to close navigation -->
       <nav class="navigation header__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link">Главная</a>
+            <a class="navigation__link navigation__link--first">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="./photo.html">
@@ -34,6 +37,7 @@
       </nav>
       <a class="logo header__logo">
         <img
+          class="logo__image"
           width="101"
           height="83"
           src="./images/logotype-mobile.svg"
