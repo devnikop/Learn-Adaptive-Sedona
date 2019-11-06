@@ -24,7 +24,8 @@
   },
   "browserslist": [
     "last 2 versions",
-    "Firefox ESR"
+    "Firefox ESR",
+    "IE 11"
   ],
   "editorconfig-cli": [
     "*.json",

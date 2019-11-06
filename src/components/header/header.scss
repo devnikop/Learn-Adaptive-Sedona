@@ -5,11 +5,21 @@
   padding-bottom: 389px;
 
   background-color: #d6e5ef;
-  background-image: url("../images/back-text-mobile.svg"),
-    url("../images/back-mask-mobile.svg"), url("../images/back-mobile.jpg");
+  background-image: url("../images/back-text.svg"),
+    url("../images/back-mask.svg"), url("../images/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom 85px, center bottom, center bottom;
-  background-size: auto cover auto;
+  background-size: 282px 214px, cover, auto;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+    padding-bottom: 518px;
+
+    background-image: url("../images/back-text.svg"),
+      url("../images/back-mask.svg"), url("../images/back-desktop.jpg");
+    background-position: center bottom 91px, center bottom, center bottom;
+    background-size: 460px 350px, auto, auto;
+  }
 }
 
 .header__logo {
@@ -18,4 +28,9 @@
   left: 50%;
 
   transform: translate(-50%, 0);
+
+  @media (min-width: $tablet) {
+    top: 0;
+    bottom: auto;
+  }
 }
