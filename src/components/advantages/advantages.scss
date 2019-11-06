@@ -1,44 +1,161 @@
 .advantages {
+  text-align: center;
   text-transform: uppercase;
 }
 
 .advantages__slogan {
+  @include mobile-paddings;
+
+  display: block;
+  margin-bottom: 30px;
+
   font-weight: $bold;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+  }
 }
 
 .advantages__main-title {
+  @include mobile-paddings;
+
   margin: 0;
 
   font-weight: $regular;
   font-size: 14px;
   line-height: 26px;
   color: $text-almost-black;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
 }
 
 .advantages__list {
   @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
+  padding-top: 40px;
+
   color: $text-white;
 
   background-color: $background-blue;
 
+  @media (min-width: $tablet) {
+    width: 100%;
+    padding: 0;
+  }
+
+  &:first-of-type {
+    @media (max-width: $mobile-only) {
+      margin-bottom: 40px;
+      padding-top: 60px;
+
+      background-image: url("../images/white-triangle.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+  }
+
   &--extra {
+    @include mobile-paddings;
+
+    padding-top: 25px;
+
     color: $text-almost-black;
 
     background-color: $background-almost-ivory;
+
+    @media (min-width: $tablet) {
+      flex-grow: 1;
+      width: 33%;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.advantages__item-wrapper {
+  @include mobile-paddings;
+
+  padding-bottom: 260px;
+
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto 260px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    padding: 0;
+  }
+
+  &--city {
+    background-image: url("../images/photo-city.jpg"), linear-gradient(#dde9f1);
+
+    @media (min-width: $tablet) {
+      background-image: url("../images/photo-city-desktop.jpg"),
+        linear-gradient(#dde9f1);
+      background-position: right top;
+    }
+  }
+
+  &--bridge {
+    background-image: url("../images/photo-bridge.jpg"),
+      linear-gradient(#dde9f1);
+
+    @media (min-width: $tablet) {
+      background-image: url("../images/photo-bridge-desktop.jpg"),
+        linear-gradient(#dde9f1);
+      background-position: left top;
+    }
+  }
+}
+
+.advantages__item-inner {
+  @media (min-width: $tablet) {
+    width: 33%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+
+    background-color: $background-blue;
+
+    &--bridge {
+      margin-left: auto;
+    }
+  }
+}
+
+.advantages__extra-wrapper {
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid #d6d6d6;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
+
+  &--last {
+    border-bottom: 0;
   }
 }
 
 .advantages__title {
   margin: 0;
+  margin-bottom: 10px;
 
   font-weight: $bold;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+  }
 
   &--extra {
     color: $text-black;
@@ -46,35 +163,97 @@
 }
 
 .advantages__index-number {
+  display: block;
+  margin-bottom: 15px;
+
   font-size: 14px;
   line-height: 21px;
 }
 
 .advantages__text {
   margin: 0;
+  padding-bottom: 40px;
 
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+
+  &--extra {
+    padding-bottom: 0;
+  }
 }
 
 .advantages__sublist {
   @include list-reset;
+  @include mobile-paddings;
+
+  padding-top: 25px;
 
   color: $text-almost-black;
+  text-align: left;
 
   background-color: $background-white;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
 }
 
 .advantages__sublist-item {
+  margin-bottom: 20px;
+  padding-left: 50px;
+
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 39px 37px;
+
+  @media (min-width: $tablet) {
+    width: 33%;
+    margin-bottom: 0;
+    padding: 0 20px;
+    padding-top: 90px;
+
+    text-align: center;
+
+    background-position: center top;
+    background-size: 75px 75px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--house {
+    background-image: url("../images/icon-house.svg");
+  }
+
+  &--gift {
+    background-image: url("../images/icon-gift.svg");
+  }
+
+  &--burger {
+    background-image: url("../images/icon-burger.svg");
+  }
 }
 
 .advantages__sublist-title {
   margin: 0;
+  margin-bottom: 15px;
+  padding-top: 10px;
 
   font-weight: $bold;
   font-size: 18px;
   line-height: 26px;
   color: $text-black;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+  }
 }
 
 .advantages__sublist-text {
