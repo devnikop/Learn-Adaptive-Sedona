@@ -21,3 +21,7 @@
 @mixin tablet-paddings {
   padding: 0 45px;
 }
+
+@mixin desktop-paddings {
+  padding: 0 120px;
+}

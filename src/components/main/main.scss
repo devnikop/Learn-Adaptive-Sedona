@@ -3,9 +3,22 @@
 
 .main__advantages {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
 }
 
 .main__hotel {
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 65px;
+  }
 }
 
 .main__map {

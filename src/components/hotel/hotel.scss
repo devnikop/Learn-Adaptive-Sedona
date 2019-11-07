@@ -1,20 +1,45 @@
 .hotel {
+  @include mobile-paddings;
+
+  text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    @include tablet-paddings;
+
+    width: 460px;
+    margin: 0 auto;
+  }
 }
 
 .hotel__slogan {
+  display: block;
+  margin-bottom: 20px;
+
   font-weight: $bold;
   font-size: 21px;
   line-height: 26px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
 }
 
 .hotel__text {
   margin: 0;
+  margin-bottom: 35px;
 
   font-size: 14px;
   line-height: 24px;
   color: $text-almost-black;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
 }
 
 .hotel__link {
+  width: 100%;
 }

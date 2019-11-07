@@ -119,8 +119,7 @@
           <li class="advantages__item advantages__item--extra">
             <div class="advantages__extra-wrapper">
               <h3 class="advantages__title advantages__title--extra">
-                Небольшая<br />
-                площадь
+                Небольшая площадь
               </h3>
               <span class="advantages__index-number">№3</span>
               <p class="advantages__text advantages__text--extra">
@@ -131,8 +130,7 @@
           <li class="advantages__item advantages__item--extra">
             <div class="advantages__extra-wrapper">
               <h3 class="advantages__title advantages__title--extra">
-                Красивая<br />
-                дорога
+                Красивая дорога
               </h3>
               <span class="advantages__index-number">№4</span>
               <p class="advantages__text advantages__text--extra">
@@ -145,8 +143,7 @@
               class="advantages__extra-wrapper advantages__extra-wrapper--last"
             >
               <h3 class="advantages__title advantages__title--extra">
-                Мало<br />
-                туристов
+                Мало туристов
               </h3>
               <span class="advantages__index-number">№5</span>
               <p class="advantages__text advantages__text--extra">
@@ -163,39 +160,61 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в седоне
         </p>
-        <a class="button hotel__link">Найти гостиницу</a>
+        <a class="button hotel__link" href="#">Найти гостиницу</a>
       </section>
       <section class="map main__map">
         <h2 class="visually-hidden">Карта с местоположением города Седона</h2>
-        <img
-          class="map__image"
-          width="320"
-          height="350"
-          src="./images/map-mobile.jpg"
-          alt="Карта"
-        />
+        <img class="map__image" src="./images/map-desktop.jpg" alt="Карта" />
+        <iframe
+          class="map__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249255.05456488425!2d-111.7667545!3d34.8320032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1573110972892!5m2!1sen!2sru"
+          frameborder="0"
+          allowfullscreen=""
+        >
+        </iframe>
       </section>
     </main>
     <footer class="footer page__footer">
       <b class="footer__hashtag">#Visitsedona</b>
       <ul class="socials footer__socials">
         <li>
-          <a class="socials__link socials__link--twitter">
+          <a class="socials__link socials__link--twitter" href="#">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li>
-          <a class="socials__link socials__link--facebook">
+          <a class="socials__link socials__link--facebook" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li>
-          <a class="socials__link socials__link--youtube">
+          <a class="socials__link socials__link--youtube" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <span class="footer__copyright">Разработано</span>
+      <a
+        class="footer__copyright"
+        href="https://htmlacademy.ru/"
+        target="blank"
+      >
+        Разработано
+        <svg
+          class="footer__copyright-image"
+          xmlns="http://www.w3.org/2000/svg"
+          data-name="Layer 1"
+          width="27"
+          height="34"
+          viewBox="0 0 154 195"
+          fill="currentColor"
+        >
+          <path
+            stroke="#231f20"
+            stroke-miterlimit="10"
+            d="M77.99.62l-.8-.08-76.69 8v140.57l76.69 45.63 76.69-45.63V8.54zm65.86 142.82l-66.66 39.63-66.66-39.67V85.79l66.37 39.5.12 7.16-45.54-27.1-.07 6.95 45.72 27.48.11 7.35-45.7-27.19-.06 6.95 45.71 27.48 46.15-27.62v-7h-.06v-22.7l20.57-12.28zm0-66.06l-18.24 10.75-8.42 5-40.2-23.97-.06 7 34.31 20.4-.3.18-.74.44-4.88 2.87-28.33-16.89-.06 6.95 22.36 13.29-5.28 3.53-.13.08-16.89-9.95-.06 6.95 11.08 6.53-11.29 6.78-66-39.26L76.86 38.3h0zm0-7l-67-39.51h0L10.57 70.34V17.62l66.62-7 66.66 7z"
+          />
+        </svg>
+      </a>
     </footer>
 
     <script src="./index.js"></script>
