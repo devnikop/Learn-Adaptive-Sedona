@@ -11,7 +11,11 @@
       <nav class="navigation header__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="./index.html">Главная</a>
+            <a
+              class="navigation__link navigation__link--first"
+              href="./index.html"
+              >Главная</a
+            >
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="./photo.html">
@@ -19,10 +23,17 @@
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link">Форма отзыва</a>
+            <a class="navigation__link navigation__link--current"
+              >Форма отзыва</a
+            >
           </li>
           <li class="navigation__item">
-            <a class="navigation__link">Html Academy</a>
+            <a
+              class="navigation__link"
+              href="https://htmlacademy.ru/"
+              target="blank"
+              >Html Academy</a
+            >
           </li>
         </ul>
         <button class="navigation__open" aria-label="Открыть меню"></button>
@@ -30,6 +41,7 @@
       </nav>
       <a class="logo header__logo">
         <img
+          class="logo__image"
           width="101"
           height="83"
           src="./images/logotype-mobile.svg"
@@ -218,22 +230,43 @@
       <b class="footer__hashtag">#Visitsedona</b>
       <ul class="socials footer__socials">
         <li>
-          <a class="socials__link socials__link--twitter">
+          <a class="socials__link socials__link--twitter" href="#">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li>
-          <a class="socials__link socials__link--facebook">
+          <a class="socials__link socials__link--facebook" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li>
-          <a class="socials__link socials__link--youtube">
+          <a class="socials__link socials__link--youtube" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <span class="footer__copyright">Разработано</span>
+      <a
+        class="footer__copyright"
+        href="https://htmlacademy.ru/"
+        target="blank"
+      >
+        Разработано
+        <svg
+          class="footer__copyright-image"
+          xmlns="http://www.w3.org/2000/svg"
+          data-name="Layer 1"
+          width="27"
+          height="34"
+          viewBox="0 0 154 195"
+          fill="currentColor"
+        >
+          <path
+            stroke="#231f20"
+            stroke-miterlimit="10"
+            d="M77.99.62l-.8-.08-76.69 8v140.57l76.69 45.63 76.69-45.63V8.54zm65.86 142.82l-66.66 39.63-66.66-39.67V85.79l66.37 39.5.12 7.16-45.54-27.1-.07 6.95 45.72 27.48.11 7.35-45.7-27.19-.06 6.95 45.71 27.48 46.15-27.62v-7h-.06v-22.7l20.57-12.28zm0-66.06l-18.24 10.75-8.42 5-40.2-23.97-.06 7 34.31 20.4-.3.18-.74.44-4.88 2.87-28.33-16.89-.06 6.95 22.36 13.29-5.28 3.53-.13.08-16.89-9.95-.06 6.95 11.08 6.53-11.29 6.78-66-39.26L76.86 38.3h0zm0-7l-67-39.51h0L10.57 70.34V17.62l66.62-7 66.66 7z"
+          />
+        </svg>
+      </a>
     </footer>
   </body>
 </html>
