@@ -25,15 +25,29 @@
 }
 
 .main__title {
+  @include mobile-paddings;
+
   margin: 0;
+  margin-bottom: 30px;
 
   font-weight: $bold;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 .main__photo {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+  }
 }
 
 .main__presentation {

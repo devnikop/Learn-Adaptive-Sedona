@@ -6,7 +6,7 @@
     <title>Sedona</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="page">
+  <body class="page no-script">
     <header class="header page__header">
       <nav class="navigation header__nav">
         <ul class="navigation__list">
@@ -18,16 +18,12 @@
             >
           </li>
           <li class="navigation__item">
-            <a class="navigation__link">
+            <a class="navigation__link navigation__link--current">
               Фото и видео
             </a>
           </li>
           <li class="navigation__item">
-            <a
-              class="navigation__link navigation__link--current"
-              href="./form.html"
-              >Форма отзыва</a
-            >
+            <a class="navigation__link" href="./form.html">Форма отзыва</a>
           </li>
           <li class="navigation__item">
             <a
@@ -62,29 +58,109 @@
           забыть о политике и экономике.
         </p>
         <ul class="photo__list">
-          <li>
-            <h3 class="photo__title">Неродные просторы</h3>
-            <span class="photo__author">Автор фото: Борис</span>
-            <span class="photo__likes">1350</span>
-            <img class="photo__image" src="./images/photo-1-mobile.jpg" />
+          <li class="photo__item">
+            <div class="photo__wrapper">
+              <div class="photo__text-wrapper">
+                <h3 class="photo__title">Неродные просторы</h3>
+                <span class="photo__author">Автор фото: Борис</span>
+              </div>
+              <div class="photo__like-wrapper">
+                <button
+                  class="photo__like-button"
+                  aria-label="Поставить лайк"
+                ></button>
+                <span class="photo__like-count">1350</span>
+              </div>
+            </div>
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./images/photo-1-desktop.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/photo-1-tablet.jpg"
+              />
+              <img src="./images/photo-1-mobile.jpg" />
+            </picture>
           </li>
-          <li>
-            <h3 class="photo__title">Местная растительность</h3>
-            <span class="photo__author">Автор фото: Сергей</span>
-            <span class="photo__likes">143</span>
-            <img class="photo__image" src="./images/photo-2-mobile.jpg" />
+          <li class="photo__item">
+            <div class="photo__wrapper">
+              <div class="photo__text-wrapper">
+                <h3 class="photo__title">Местная растительность</h3>
+                <span class="photo__author">Автор фото: Сергей</span>
+              </div>
+              <div class="photo__like-wrapper">
+                <button
+                  class="photo__like-button"
+                  aria-label="Поставить лайк"
+                ></button>
+                <span class="photo__like-count">143</span>
+              </div>
+            </div>
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./images/photo-2-desktop.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/photo-2-tablet.jpg"
+              />
+              <img src="./images/photo-2-mobile.jpg" />
+            </picture>
           </li>
-          <li>
-            <h3 class="photo__title">Дорога на север</h3>
-            <span class="photo__author">Автор фото: Петр</span>
-            <span class="photo__likes">96</span>
-            <img class="photo__image" src="./images/photo-3-mobile.jpg" />
+          <li class="photo__item">
+            <div class="photo__wrapper photo__wrapper--north-color">
+              <div class="photo__text-wrapper">
+                <h3 class="photo__title">Дорога на север</h3>
+                <span class="photo__author">Автор фото: Петр</span>
+              </div>
+              <div class="photo__like-wrapper">
+                <button
+                  class="photo__like-button"
+                  aria-label="Поставить лайк"
+                ></button>
+                <span class="photo__like-count">96</span>
+              </div>
+            </div>
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./images/photo-3-desktop.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/photo-3-tablet.jpg"
+              />
+              <img src="./images/photo-3-mobile.jpg" />
+            </picture>
           </li>
-          <li>
-            <h3 class="photo__title">Мост дьявола</h3>
-            <span class="photo__author">Автор фото: Антон</span>
-            <span class="photo__likes">254</span>
-            <img class="photo__image" src="./images/photo-4-mobile.jpg" />
+          <li class="photo__item">
+            <div class="photo__wrapper">
+              <div class="photo__text-wrapper">
+                <h3 class="photo__title">Мост дьявола</h3>
+                <span class="photo__author">Автор фото: Антон</span>
+              </div>
+              <div class="photo__like-wrapper">
+                <button
+                  class="photo__like-button"
+                  aria-label="Поставить лайк"
+                ></button>
+                <span class="photo__like-count">254</span>
+              </div>
+            </div>
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./images/photo-4-desktop.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/photo-4-tablet.jpg"
+              />
+              <img src="./images/photo-4-mobile.jpg" />
+            </picture>
           </li>
         </ul>
       </section>
@@ -98,7 +174,11 @@
         <video
           class="presentation__video"
           poster="./images/video-mobile.jpg"
-        ></video>
+          controls="true"
+          preload="metadata"
+        >
+          <source src="./video/sedona.mov" />
+        </video>
       </section>
     </main>
     <footer class="footer page__footer">
@@ -143,5 +223,7 @@
         </svg>
       </a>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
