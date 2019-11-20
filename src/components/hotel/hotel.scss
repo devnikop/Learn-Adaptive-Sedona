@@ -35,8 +35,16 @@
   line-height: 24px;
   color: $text-almost-black;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
+
+    br {
+      display: block;
+    }
   }
 }
 
