@@ -3,4 +3,11 @@
 
 .logo__image {
   display: block;
+  width: 102px;
+  height: 83px;
+
+  @media (min-width: $desktop) {
+    width: 188px;
+    height: 96px;
+  }
 }

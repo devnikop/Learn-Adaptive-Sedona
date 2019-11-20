@@ -7,14 +7,22 @@
   @include mobile-paddings;
 
   display: block;
-  margin-bottom: 30px;
+  width: 84%;
+  margin: 0 auto;
+  margin-bottom: 27px;
 
   font-weight: $bold;
   font-size: 18px;
   line-height: 26px;
 
   @media (min-width: $tablet) {
+    width: 70%;
+
     font-size: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 50%;
   }
 }
 
@@ -41,6 +49,7 @@
 }
 
 .advantages__item {
+  width: 100%;
   padding-top: 40px;
 
   color: $text-white;
@@ -54,8 +63,8 @@
 
   &:first-of-type {
     @media (max-width: $mobile-only) {
-      margin-bottom: 40px;
-      padding-top: 60px;
+      margin-bottom: 36px;
+      padding-top: 82px;
 
       background-image: url("../images/white-triangle.png");
       background-repeat: no-repeat;
@@ -75,8 +84,12 @@
     @media (min-width: $tablet) {
       flex-grow: 1;
       width: 33%;
-      padding: 40px 20px;
+      padding: 42px 20px 16px;
       box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 38px;
     }
   }
 }
@@ -99,9 +112,15 @@
     background-image: url("../images/photo-city.jpg"), linear-gradient(#dde9f1);
 
     @media (min-width: $tablet) {
-      background-image: url("../images/photo-city-desktop.jpg"),
+      background-image: url("../images/photo-city-tablet.jpg"),
         linear-gradient(#dde9f1);
       background-position: right top;
+      background-size: auto 256px;
+    }
+
+    @media (min-width: $desktop) {
+      background-image: url("../images/photo-city-desktop.jpg"),
+        linear-gradient(#dde9f1);
     }
   }
 
@@ -110,9 +129,15 @@
       linear-gradient(#dde9f1);
 
     @media (min-width: $tablet) {
-      background-image: url("../images/photo-bridge-desktop.jpg"),
+      background-image: url("../images/photo-bridge-tablet.jpg"),
         linear-gradient(#dde9f1);
       background-position: left top;
+      background-size: auto 256px;
+    }
+
+    @media (min-width: $desktop) {
+      background-image: url("../images/photo-bridge-desktop.jpg"),
+        linear-gradient(#dde9f1);
     }
   }
 }
@@ -120,7 +145,7 @@
 .advantages__item-inner {
   @media (min-width: $tablet) {
     width: 33%;
-    padding: 40px 20px;
+    padding: 46px 20px;
     box-sizing: border-box;
 
     background-color: $background-blue;
@@ -129,10 +154,14 @@
       margin-left: auto;
     }
   }
+
+  @media (min-width: $desktop) {
+    padding: 54px 40px 58px;
+  }
 }
 
 .advantages__extra-wrapper {
-  padding-bottom: 25px;
+  padding-bottom: 28px;
 
   border-bottom: 1px solid #d6d6d6;
 
@@ -154,20 +183,38 @@
   line-height: 26px;
 
   @media (min-width: $tablet) {
+    padding: 0 32px;
+
     font-size: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 83px;
   }
 
   &--extra {
     color: $text-black;
+
+    @media (min-width: $desktop) {
+      padding: 0 105px;
+    }
   }
 }
 
 .advantages__index-number {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+
+    &--extra {
+      margin-bottom: 22px;
+    }
+  }
 }
 
 .advantages__text {
@@ -178,11 +225,23 @@
   line-height: 21px;
 
   @media (min-width: $tablet) {
-    padding: 0;
+    padding: 0 20px;
+  }
+
+  &--narrow {
+    @media (min-width: $desktop) {
+      padding: 0 45px;
+    }
   }
 
   &--extra {
+    width: 90%;
+    margin: 0 auto;
     padding-bottom: 0;
+
+    @media (min-width: $tablet) {
+      width: 80%;
+    }
   }
 }
 
@@ -200,7 +259,11 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 57px 0 61px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 83px;
   }
 }
 
@@ -234,6 +297,10 @@
 
   &--gift {
     background-image: url("../images/icon-gift.svg");
+
+    @media (min-width: $tablet) {
+      order: 1;
+    }
   }
 
   &--burger {
@@ -243,8 +310,8 @@
 
 .advantages__sublist-title {
   margin: 0;
-  margin-bottom: 15px;
-  padding-top: 10px;
+  margin-bottom: 14px;
+  padding-top: 9px;
 
   font-weight: $bold;
   font-size: 18px;
@@ -252,6 +319,9 @@
   color: $text-black;
 
   @media (min-width: $tablet) {
+    margin-bottom: 21px;
+    padding-top: 11px;
+
     font-size: 21px;
   }
 }
@@ -261,4 +331,24 @@
 
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $tablet) {
+    padding: 0 25px;
+
+    &--burger {
+      padding: 0 30px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 30px;
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $desktop) {
+      display: block;
+    }
+  }
 }
