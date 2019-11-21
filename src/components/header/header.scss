@@ -19,6 +19,26 @@
     background-position: center bottom 91px, center bottom, center bottom;
     background-size: 460px 350px, auto, auto;
   }
+
+  &--short {
+    padding-bottom: 158px;
+    background-image: url("../images/sedona-text.svg"),
+      url("../images/back-mask.svg"), url("../images/back-mobile.jpg");
+    background-position: center bottom 67px, center bottom, center bottom;
+    background-size: 229px 39px, cover, auto;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 290px;
+      background-image: url("../images/sedona-text.svg"),
+        url("../images/back-mask.svg"), url("../images/back-desktop.jpg");
+      background-position: center bottom 117px, center bottom, center bottom;
+      background-size: 458px 78px, auto, auto;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 301px;
+    }
+  }
 }
 
 .header__logo {
@@ -27,6 +47,10 @@
   left: 50%;
 
   transform: translate(-50%, 0);
+
+  &--low {
+    bottom: 131px;
+  }
 
   @media (min-width: $tablet) {
     top: 0;

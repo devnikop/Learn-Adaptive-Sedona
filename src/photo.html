@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="page no-script">
-    <header class="header page__header">
+    <header class="header header--short page__header page__header--inner">
       <nav class="navigation header__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -37,18 +37,26 @@
         <button class="navigation__open" aria-label="Открыть меню"></button>
         <button class="navigation__close" aria-label="Закрыть меню"></button>
       </nav>
-      <a class="logo header__logo">
-        <img
-          class="logo__image"
-          width="101"
-          height="83"
-          src="./images/logotype-mobile.svg"
-          alt="Логотип"
-        />
+      <a class="logo header__logo header__logo--low">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="./images/logo-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/logo-tablet.svg"
+          />
+          <img
+            class="logo__image"
+            src="./images/logo-mobile.svg"
+            alt="Логотип"
+          />
+        </picture>
       </a>
     </header>
     <main class="main page__main">
-      <h1 class="main__title">
+      <h1 class="main__title main__title--photo">
         Фото и видео
       </h1>
       <section class="photo main__photo">

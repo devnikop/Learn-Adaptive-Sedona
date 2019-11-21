@@ -36,6 +36,10 @@
   text-transform: uppercase;
   text-align: center;
 
+  &--photo {
+    margin-bottom: 25px;
+  }
+
   @media (min-width: $tablet) {
     font-size: 30px;
     line-height: 36px;
@@ -43,14 +47,23 @@
 }
 
 .main__photo {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 70px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 65px;
   }
 }
 
 .main__presentation {
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 85px;
+  }
 }
 
 .main__form {

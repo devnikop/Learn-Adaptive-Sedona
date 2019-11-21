@@ -5,13 +5,16 @@
   @media (min-width: $tablet) {
     padding: 0 60px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .photo__text {
-  @include mobile-paddings;
-
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  padding: 0 25px;
 
   font-size: 14px;
   line-height: 24px;
@@ -21,8 +24,12 @@
 
   @media (min-width: $tablet) {
     width: 68%;
-    margin: 0 auto 60px;
+    margin: 0 auto 70px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 36%;
   }
 }
 
@@ -42,8 +49,8 @@
 
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 17px;
 
   border-bottom: 1px solid #e5e5e5;
 
@@ -74,11 +81,12 @@
 
   & img {
     order: -1;
+    width: 100%;
     margin-bottom: 15px;
 
     background-color: #e5e5e5;
 
-    object-fit: contain;
+    object-fit: cover;
 
     @media (min-width: $tablet) {
       margin-bottom: 0;
@@ -91,7 +99,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px 20px 17px;
 
     background-color: #f2f2f2;
   }
@@ -120,7 +128,6 @@
 
 .photo__title {
   margin: 0;
-  margin-bottom: 5px;
 
   font-size: 14px;
   line-height: 24px;
@@ -129,9 +136,14 @@
 }
 
 .photo__author {
-  margin-bottom: 5px;
+  display: block;
+  margin-bottom: 8px;
 
   color: $text-almost-black;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop) {
     color: inherit;
@@ -140,6 +152,7 @@
 
 .photo__like-wrapper {
   display: flex;
+  min-width: 65px;
 }
 
 .photo__like-button {
@@ -150,6 +163,10 @@
   margin-right: 15px;
 
   background-image: url("../images/icon-like.svg");
+
+  @media (min-width: $tablet) {
+    margin-right: 10px;
+  }
 }
 
 .photo__like-count {

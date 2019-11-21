@@ -40,13 +40,21 @@
         <button class="navigation__close" aria-label="Закрыть меню"></button>
       </nav>
       <a class="logo header__logo">
-        <img
-          class="logo__image"
-          width="101"
-          height="83"
-          src="./images/logotype-mobile.svg"
-          alt="Логотип"
-        />
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="./images/logo-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/logo-tablet.svg"
+          />
+          <img
+            class="logo__image"
+            src="./images/logo-mobile.svg"
+            alt="Логотип"
+          />
+        </picture>
       </a>
     </header>
     <main class="main page__main">

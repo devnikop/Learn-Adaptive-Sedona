@@ -7,6 +7,16 @@
   @media (min-width: $tablet) {
     margin-bottom: 50px;
   }
+
+  &--inner {
+    @media (min-width: $tablet) {
+      margin-bottom: 69px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 106px;
+    }
+  }
 }
 
 .page__main {
