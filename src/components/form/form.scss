@@ -2,44 +2,96 @@
 }
 
 .form__text {
+  @include mobile-paddings;
+
   margin: 0;
+  margin-bottom: 16px;
 
   font-size: 14px;
   line-height: 24px;
   color: $text-almost-black;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form__group {
+  margin: 0;
+  padding: 0 20px;
+  padding-top: 18px;
+  margin-bottom: 23px;
+
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.form__group-inner {
 }
 
 .form__legend {
+  display: block;
+  margin-bottom: 21px;
+
   font-weight: $bold;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form__label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+
   font-size: 14px;
   line-height: 26px;
   color: $text-almost-black;
   text-transform: uppercase;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--column {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+}
+
+.form__label-text {
+  margin-right: 15px;
+
+  &--info {
+    margin-bottom: 6px;
+    padding-left: 21px;
+  }
 }
 
 .form__input {
-  padding: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 15px 20px 17px;
   box-sizing: border-box;
 
   font-weight: $bold;
   font-size: 18px;
   line-height: 26px;
   color: $text-black;
+
+  border: none;
+  background-color: #f2f2f2;
+
+  &--column {
+    width: 100%;
+  }
 }
 
 .form__input::placeholder {
   font: inherit;
   color: inherit;
+
+  opacity: 0.5;
 }
 
 .form__list {
