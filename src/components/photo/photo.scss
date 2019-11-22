@@ -164,6 +164,8 @@
 
   background-image: url("../images/icon-like.svg");
 
+  cursor: pointer;
+
   @media (min-width: $tablet) {
     margin-right: 10px;
   }
