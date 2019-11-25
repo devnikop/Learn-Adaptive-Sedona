@@ -67,10 +67,16 @@
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
           посещенных вами достопримечательностях
         </p>
-        <form method="POST" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__group">
+        <form
+          class="form__form"
+          method="POST"
+          action="https://echo.htmlacademy.ru"
+        >
+          <fieldset class="form__group form__group--intro">
             <div class="form__group-inner">
-              <legend class="form__legend">Представьтесь:</legend>
+              <legend class="form__legend form__legend--intro">
+                Представьтесь:
+              </legend>
               <label class="form__label">
                 <span class="form__label-text">Имя*:</span>
                 <input
@@ -102,40 +108,57 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--contacts">
             <div class="form__group-inner">
-              <legend class="form__legend">Контактная информация:</legend>
-              <label class="form__label form__label--column">
-                <span class="form__label-text form__label-text--info"
-                  >Контактный телефон*:</span
-                >
-                <input
-                  class="form__input form__input--column"
-                  type="tel"
-                  name="phone"
-                  placeholder="Введите телефон"
-                />
-              </label>
-              <label class="form__label form__label--column">
-                <span class="form__label-text form__label-text--info"
-                  >Электронная почта*:</span
-                >
-                <input
-                  class="form__input form__input--column"
-                  type="email"
-                  name="email"
-                  placeholder="Введите e-mail"
-                />
-              </label>
+              <legend
+                class="form__legend form__legend--contacts form__legend--hyphen"
+              >
+                Контактная информация:
+              </legend>
+              <div class="form__contacts-wrapper">
+                <label class="form__label form__label--column">
+                  <span
+                    class="form__label-text form__label-text--info form__label-text--tablet"
+                    >Контактный телефон*:</span
+                  >
+                  <span
+                    class="form__label-text form__label-text--info form__label-text--desktop"
+                    >телефон*:</span
+                  >
+                  <div class="form__input-wrapper form__input-wrapper--phone">
+                    <input
+                      class="form__input form__input--column form__input--with-icon"
+                      type="tel"
+                      name="phone"
+                      placeholder="Введите телефон"
+                    />
+                  </div>
+                </label>
+                <label class="form__label form__label--column">
+                  <span class="form__label-text form__label-text--info"
+                    >Электронная почта*:</span
+                  >
+                  <div class="form__input-wrapper form__input-wrapper--email">
+                    <input
+                      class="form__input form__input--column form__input--with-icon"
+                      type="email"
+                      name="email"
+                      placeholder="Введите e-mail"
+                    />
+                  </div>
+                </label>
+              </div>
             </div>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--impression">
             <div class="form__group-inner">
-              <legend class="form__legend">Ваше общее впечатление:</legend>
+              <legend class="form__legend form__legend--impression">
+                Ваше общее впечатление:
+              </legend>
               <ul class="form__list">
-                <li class="radio form__item">
+                <li class="radio form__item form__item--radio">
                   <input
-                    class="visually-hidden"
+                    class="radio__input visually-hidden"
                     id="positive"
                     type="radio"
                     name="impression"
@@ -146,9 +169,9 @@
                     Скорее положительное
                   </label>
                 </li>
-                <li class="radio form__item">
+                <li class="radio form__item form__item--radio">
                   <input
-                    class="visually-hidden"
+                    class="radio__input visually-hidden"
                     id="negative"
                     type="radio"
                     name="impression"
@@ -158,9 +181,9 @@
                     Скорее отрицательное
                   </label>
                 </li>
-                <li class="radio form__item">
+                <li class="radio form__item form__item--radio">
                   <input
-                    class="visually-hidden"
+                    class="radio__input visually-hidden"
                     id="difficult"
                     type="radio"
                     name="impression"
@@ -173,15 +196,17 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--attractions">
             <div class="form__group-inner">
-              <legend class="form__legend">
-                Посещенные достопримечательности
+              <legend
+                class="form__legend form__legend--attractions form__legend--hyphen"
+              >
+                Посещенные достопримечательности:
               </legend>
-              <ul class="form__list">
-                <li class="checkbox form__item">
+              <ul class="form__list form__list--attractions">
+                <li class="checkbox form__item form__item--checkbox">
                   <input
-                    class="visually-hidden"
+                    class="checkbox__input visually-hidden"
                     id="devil-bridge"
                     type="checkbox"
                     name="devil-bridge"
@@ -191,9 +216,9 @@
                     Мост Дьявола
                   </label>
                 </li>
-                <li class="checkbox form__item">
+                <li class="checkbox form__item form__item--checkbox">
                   <input
-                    class="visually-hidden"
+                    class="checkbox__input visually-hidden"
                     id="mountain-bell"
                     type="checkbox"
                     name="mountain-bell"
@@ -203,9 +228,9 @@
                     Гора-Колокол
                   </label>
                 </li>
-                <li class="checkbox form__item">
+                <li class="checkbox form__item form__item--checkbox">
                   <input
-                    class="visually-hidden"
+                    class="checkbox__input visually-hidden"
                     id="slide-park"
                     type="checkbox"
                     name="slide-park"
@@ -215,9 +240,9 @@
                     Слайд-парк
                   </label>
                 </li>
-                <li class="checkbox form__item">
+                <li class="checkbox form__item form__item--checkbox">
                   <input
-                    class="visually-hidden"
+                    class="checkbox__input visually-hidden"
                     id="red-rocks"
                     name="red-rocks"
                     type="checkbox"
@@ -229,9 +254,13 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--textarea">
             <div class="form__group-inner">
-              <legend class="form__legend">Опишите свои эмоции:</legend>
+              <legend
+                class="form__legend form__legend--textarea form__legend--hyphen"
+              >
+                Опишите свои эмоции:
+              </legend>
               <label>
                 <textarea
                   class="form__textarea"
@@ -242,9 +271,12 @@
               </label>
             </div>
           </fieldset>
-          <button class="button form__submit" type="submit">
-            Отправить отзыв
-          </button>
+          <div class="form__submit-wrapper">
+            <button class="button form__submit" type="submit">
+              Отправить отзыв
+            </button>
+            <span class="form__text-required">* — обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>

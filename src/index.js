@@ -26,3 +26,21 @@ if (navigationElement) {
     });
   }
 }
+
+// form.html modal
+const formModal = () => {
+  const modalFailureElement = document.querySelector(`.modal--failure`);
+  if (!modalFailureElement) {
+    return;
+  }
+  const modalFailureCloseElement = modalFailureElement.querySelector(
+    `.modal__close`
+  );
+
+  const containerElement = document.querySelector(`.form`);
+  if (!containerElement) {
+    return;
+  }
+};
+
+formModal();

@@ -20,6 +20,13 @@
 }
 
 .page__main {
+  &--inner {
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 62px;
+    }
+  }
 }
 
 .page__footer {

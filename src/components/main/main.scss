@@ -36,13 +36,15 @@
   text-transform: uppercase;
   text-align: center;
 
-  &--inner {
-    margin-bottom: 25px;
-  }
-
   @media (min-width: $tablet) {
+    padding: 0 60px;
+
     font-size: 30px;
     line-height: 36px;
+  }
+
+  &--inner {
+    margin-bottom: 25px;
   }
 }
 
@@ -67,4 +69,9 @@
 }
 
 .main__form {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
 }

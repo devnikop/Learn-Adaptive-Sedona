@@ -1,8 +1,64 @@
-.radio {
+.checkbox {
 }
 
-.radio__label {
+.checkbox__label {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
   font-weight: $bold;
   font-size: 18px;
   line-height: 26px;
+
+  cursor: pointer;
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+  }
+
+  &::before {
+    width: 55px;
+    height: 55px;
+    margin-right: 23px;
+
+    background-color: #f2f2f2;
+    border-radius: 3px;
+
+    content: "";
+  }
+}
+
+.checkbox__input:focus + .checkbox__label {
+  &::before {
+    background-color: #e5e5e5;
+  }
+}
+
+.checkbox__input:checked + .checkbox__label {
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+
+    width: 41px;
+    height: 34px;
+
+    background-image: url("../images/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform: translate(0, -50%);
+
+    content: "";
+  }
 }
