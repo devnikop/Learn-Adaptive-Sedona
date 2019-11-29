@@ -17,6 +17,10 @@
 
   background-color: $background-blue;
 
+  transition-property: background-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
+
   &:hover,
   &:focus {
     background-color: #669ec0;
@@ -40,6 +44,10 @@
 
     background-repeat: no-repeat;
     background-position: center;
+
+    transition-property: opacity;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-function;
 
     content: "";
   }

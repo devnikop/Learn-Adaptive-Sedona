@@ -163,8 +163,22 @@
   margin-right: 15px;
 
   background-image: url("../images/icon-like.svg");
+  outline: none;
 
   cursor: pointer;
+
+  transition-property: opacity;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet) {
     margin-right: 10px;

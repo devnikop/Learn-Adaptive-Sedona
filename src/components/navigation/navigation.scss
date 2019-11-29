@@ -129,6 +129,10 @@
   text-align: center;
   text-transform: uppercase;
 
+  transition-property: color, filter;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
+
   @media (min-width: $tablet) {
     padding: 15px 10px;
 
