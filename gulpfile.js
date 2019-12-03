@@ -3,6 +3,8 @@
 const gulp = require("gulp");
 const rename = require("gulp-rename");
 const plumber = require("gulp-plumber");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify-es").default;
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
@@ -25,17 +27,13 @@ gulp.task("css", function() {
     .pipe(server.stream());
 });
 
-gulp.task("js", function() {
-  return gulp.src("src/index.js").pipe(gulp.dest("build/"));
-});
-
 gulp.task("clean", function() {
   return del("build");
 });
 
 gulp.task("copy", function() {
   return gulp
-    .src(["src/fonts/**/*.{woff,woff2}", "src/js/**"], {
+    .src(["src/fonts/**/*.{woff,woff2}"], {
       base: "src"
     })
     .pipe(gulp.dest("build"));
@@ -58,7 +56,17 @@ gulp.task("webp", () => {
 });
 
 gulp.task("html", function() {
-  return gulp.src("src/*.html").pipe(gulp.dest("build"));
+  return gulp
+    .src("src/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("js", () => {
+  return gulp
+    .src("src/**/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("server", function() {
